@@ -1,0 +1,35 @@
+@import "../base/variable";
+
+main {
+    .concepto{
+        div{
+            h3{
+                @include font ('montserrat' sans-serif, medium, 500, center);
+                font-size: nth($font-size, 5);
+                color: nth($colores, 6);
+                padding: 16px 0;
+            }
+        }
+    }
+    .filosofia{
+        div{
+            p{
+                padding: 35px 0 100px 0;
+                span{
+                    color: nth($colores, 4);
+                }
+            }
+        }
+    }
+    .servicios {
+        div{
+            img{
+                transition: 1seg;
+                    &:hover {
+                        transform: scale(1.1);
+                    }
+                }
+            
+        }
+    }
+}
